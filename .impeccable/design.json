@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T19:12:04.378Z",
+  "title": "Design System: Harshit Bhojwani Portfolio",
+  "extensions": {
+    "typographyMeta": {
+      "display": {
+        "displayName": "Identity Display",
+        "purpose": "The portfolio owner's name inside the identity card."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Primary content-section headings."
+      },
+      "body": {
+        "displayName": "Dossier Body",
+        "purpose": "Profile summaries, supporting copy, and factual content."
+      },
+      "label": {
+        "displayName": "Technical Marker",
+        "purpose": "Compact uppercase section metadata."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shell-lift",
+        "value": "0 28px 80px rgba(0, 0, 0, 0.28)",
+        "purpose": "Separates the centered dossier shell from the grid backdrop."
+      },
+      {
+        "name": "floating-navigation",
+        "value": "0 16px 36px rgba(0, 0, 0, 0.25)",
+        "purpose": "Lifts the desktop navigation rail above the page."
+      },
+      {
+        "name": "floating-navigation-mobile",
+        "value": "0 16px 34px rgba(0, 0, 0, 0.38)",
+        "purpose": "Keeps the mobile dock distinct from content."
+      },
+      {
+        "name": "avatar-inset",
+        "value": "0 10px 30px rgba(0, 0, 0, 0.25)",
+        "purpose": "Anchors the monogram avatar inside the identity panel."
+      }
+    ],
+    "motion": [
+      {
+        "name": "hero-enter",
+        "value": "650ms cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "The on-load fade, rise, and blur reduction for the hero."
+      },
+      {
+        "name": "section-rise",
+        "value": "620ms cubic-bezier(.16, 1, .3, 1); view entry 6% cover 20%",
+        "purpose": "A gentle vertical reveal for the About and Contact narrative sections."
+      },
+      {
+        "name": "timeline-unfold",
+        "value": "680ms cubic-bezier(.16, 1, .3, 1); view entry 4% cover 22%",
+        "purpose": "A shallow clip reveal for Experience and Education timelines."
+      },
+      {
+        "name": "detail-resolve",
+        "value": "560ms cubic-bezier(.16, 1, .3, 1); view entry 8% cover 21%",
+        "purpose": "A restrained blur and horizontal resolve for Skills, Certifications, Achievements, and Languages."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "entrance animations none; primary state transitions none",
+        "purpose": "Removes hero and section entrances plus the primary control, navigation, skill, and footer transitions when reduced motion is requested."
+      },
+      {
+        "name": "state-standard",
+        "value": "180ms ease-out",
+        "purpose": "Button, chip, and link hover transitions."
+      },
+      {
+        "name": "state-quick",
+        "value": "160ms ease-out",
+        "purpose": "Navigation, tooltip, and skip-link transitions."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "navigation",
+        "value": "900px"
+      },
+      {
+        "name": "compact",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Contact Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The high-emphasis in-page action used to reach the contact section.",
+      "html": "<a class=\"ds-button-primary\" href=\"#contact\">Let's connect <span aria-hidden=\"true\">↘</span></a>",
+      "css": ".ds-button-primary { display: inline-flex; align-items: center; justify-content: center; gap: 9px; height: 42px; padding: 0 15px; border: 1px solid var(--text); border-radius: 9px; background: var(--text); color: #101217; font: 650 13px/1 var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif; text-decoration: none; transition: transform 180ms ease-out, background 180ms ease-out; } .ds-button-primary:hover { transform: translateY(-2px); background: #fff; } .ds-button-primary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }"
+    },
+    {
+      "name": "Icon Action",
+      "kind": "button",
+      "refersTo": "icon-button",
+      "description": "A compact square action for email and external-profile links.",
+      "html": "<a class=\"ds-icon-button\" href=\"#contact\" aria-label=\"Contact\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M4 4h16v16H4z\"/><path d=\"m4 6 8 6 8-6\"/></svg></a>",
+      "css": ".ds-icon-button { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border: 1px solid var(--line-strong); border-radius: 9px; background: transparent; color: var(--text); text-decoration: none; transition: transform 180ms ease-out, border-color 180ms ease-out; } .ds-icon-button:hover { transform: translateY(-2px); border-color: rgba(255,255,255,.3); } .ds-icon-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }"
+    },
+    {
+      "name": "Skill Chip",
+      "kind": "chip",
+      "refersTo": "skill-chip",
+      "description": "A compact technical tag used inside skill groups.",
+      "html": "<span class=\"ds-skill-chip\">Java</span>",
+      "css": ".ds-skill-chip { display: inline-block; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface-soft); color: #c6c8d0; font: 400 12px/1.2 var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif; transition: border-color 180ms ease-out, color 180ms ease-out; } .ds-skill-chip:hover { border-color: rgba(139,124,246,.45); color: var(--text); }"
+    },
+    {
+      "name": "Identity Card",
+      "kind": "card",
+      "refersTo": "identity-card",
+      "description": "The signature inset panel for identity, availability, location, and contact actions.",
+      "html": "<section class=\"ds-identity-card\"><div class=\"ds-avatar\">HB</div><div><span class=\"ds-status\"><i></i> Software Developer</span><h1>Harshit Bhojwani</h1><p>Software Developer · New Delhi, India</p></div></section>",
+      "css": ".ds-identity-card { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 16px; min-height: 130px; padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface-raised); color: var(--text); font-family: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif; } .ds-identity-card h1 { margin: 1px 0 0; font-size: 30px; line-height: 1.08; letter-spacing: -.04em; } .ds-identity-card p { margin: 6px 0 0; color: var(--muted); font-size: 12px; } .ds-avatar { display: grid; place-items: center; width: 60px; aspect-ratio: 1; border: 1px solid var(--line-strong); border-radius: 50%; background: radial-gradient(circle at 40% 30%, #232836, #0e1117 65%); font-size: 13px; font-weight: 700; } .ds-status { display: flex; align-items: center; gap: 7px; color: var(--muted); font-size: 11px; } .ds-status i { width: 7px; height: 7px; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 3px rgba(71,201,130,.11); }"
+    },
+    {
+      "name": "Resume Timeline Entry",
+      "kind": "custom",
+      "refersTo": "experience-entry",
+      "description": "The shared ruled timeline language for experience and education evidence.",
+      "html": "<article class=\"ds-resume-entry\"><span class=\"ds-timeline-dot\" aria-hidden=\"true\"></span><div class=\"ds-resume-content\"><div class=\"ds-entry-heading\"><div><h3>INFINN</h3><p>Product Design Intern</p></div><time>Jul 2026 – Sep 2026</time></div><ul><li>Applied information architecture principles to product content and user flows.</li></ul></div></article>",
+      "css": ".ds-resume-entry { position: relative; display: flex; gap: 18px; padding: 22px 4px; border-block: 1px solid var(--line); color: var(--text); font-family: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif; } .ds-timeline-dot { z-index: 1; flex: 0 0 auto; width: 10px; height: 10px; margin-top: 6px; border: 2px solid var(--accent); border-radius: 50%; background: var(--surface); box-shadow: 0 0 0 5px var(--accent-soft); } .ds-resume-content { min-width: 0; flex: 1; } .ds-entry-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; } .ds-entry-heading h3 { margin: 0; font-size: 15px; } .ds-entry-heading p { margin: 3px 0 0; color: #c6c8d0; font-size: 12px; font-weight: 600; } .ds-entry-heading time { flex: 0 0 auto; padding: 5px 9px; border: 1px solid rgba(139,124,246,.18); border-radius: 999px; background: var(--accent-soft); color: #c4bdfb; font-size: 10px; white-space: nowrap; } .ds-resume-entry ul { display: grid; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; color: var(--muted); font-size: 12px; line-height: 1.65; } .ds-resume-entry li { position: relative; padding-left: 15px; } .ds-resume-entry li::before { content: \"\"; position: absolute; top: .72em; left: 0; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }"
+    },
+    {
+      "name": "Credential Row",
+      "kind": "custom",
+      "refersTo": "credential-row",
+      "description": "A compact certification record with an optional linked state.",
+      "html": "<a class=\"ds-credential-row\" href=\"#credential\"><h3>Artificial Intelligence Fundamentals</h3><p>IBM SkillsBuild</p></a>",
+      "css": ".ds-credential-row { display: block; padding: 16px 4px; border-block: 1px solid var(--line); color: var(--text); font-family: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif; text-decoration: none; transition: color 180ms ease-out, padding 180ms ease-out; } .ds-credential-row h3 { margin: 0; font-size: 13px; } .ds-credential-row p { margin: 3px 0 0; color: var(--muted); font-size: 11px; } .ds-credential-row:hover { padding-inline: 8px; color: var(--accent); } .ds-credential-row:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }"
+    },
+    {
+      "name": "Achievement List",
+      "kind": "custom",
+      "description": "A ruled evidence list with small violet markers.",
+      "html": "<ul class=\"ds-achievement-list\"><li>Played School Nationals in Table Tennis</li><li>Represented college in GGSIPU Table Tennis Tournament</li></ul>",
+      "css": ".ds-achievement-list { display: grid; margin: 0; padding: 0; border-block: 1px solid var(--line); list-style: none; color: #c6c8d0; font-family: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif; font-size: 13px; } .ds-achievement-list li { position: relative; padding: 16px 8px 16px 24px; } .ds-achievement-list li + li { border-top: 1px solid var(--line); } .ds-achievement-list li::before { content: \"\"; position: absolute; top: 23px; left: 6px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }"
+    },
+    {
+      "name": "Language Chip",
+      "kind": "chip",
+      "refersTo": "language-chip",
+      "description": "A noninteractive compact label for spoken languages.",
+      "html": "<span class=\"ds-language-chip\">French (Basic)</span>",
+      "css": ".ds-language-chip { display: inline-block; padding: 8px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface-soft); color: #c6c8d0; font: 400 12px/1.2 var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif; }"
+    },
+    {
+      "name": "Desktop Navigation Rail",
+      "kind": "nav",
+      "description": "The translucent vertical section rail used on viewports wider than 900px.",
+      "html": "<nav class=\"ds-desktop-nav\" aria-label=\"Section navigation\"><a href=\"#home\" aria-label=\"Home\"><svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m3 11 9-8 9 8\"/><path d=\"M5 10v10h14V10\"/></svg><span>Home</span></a><a href=\"#contact\" aria-label=\"Contact\"><svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M4 4h16v14H7l-3 3z\"/></svg><span>Contact</span></a></nav>",
+      "css": ".ds-desktop-nav { display: flex; flex-direction: column; gap: 6px; width: fit-content; padding: 8px; border: 1px solid var(--line-strong); border-radius: 17px; background: rgba(24,26,31,.72); box-shadow: 0 16px 36px rgba(0,0,0,.25); backdrop-filter: blur(10px); } .ds-desktop-nav a { position: relative; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 11px; color: var(--muted); text-decoration: none; transition: color 160ms ease-out, background 160ms ease-out; } .ds-desktop-nav a:hover { color: var(--text); background: rgba(255,255,255,.05); } .ds-desktop-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-desktop-nav span { position: absolute; right: calc(100% + 12px); padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface-soft); color: var(--text); font-size: 10px; opacity: 0; transform: translateX(4px); transition: opacity 160ms ease-out, transform 160ms ease-out; } .ds-desktop-nav a:hover span { opacity: 1; transform: translateX(0); }"
+    },
+    {
+      "name": "Mobile Navigation Dock",
+      "kind": "nav",
+      "description": "The fixed bottom navigation treatment used at 900px and below.",
+      "html": "<nav class=\"ds-mobile-nav\" aria-label=\"Mobile navigation\"><a href=\"#home\">Home</a><a href=\"#skills\">Skills</a><a href=\"#contact\">Contact</a><button type=\"button\">Menu</button></nav>",
+      "css": ".ds-mobile-nav { display: flex; width: fit-content; padding: 7px; border: 1px solid var(--line-strong); border-radius: 16px; background: rgba(24,26,31,.9); box-shadow: 0 16px 34px rgba(0,0,0,.38); backdrop-filter: blur(12px); } .ds-mobile-nav a, .ds-mobile-nav button { display: flex; align-items: center; justify-content: center; width: 54px; height: 46px; border: 0; border-radius: 10px; background: transparent; color: var(--muted); font: 400 9px/1 var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif; text-decoration: none; cursor: pointer; } .ds-mobile-nav a:hover, .ds-mobile-nav button:hover { background: rgba(255,255,255,.05); color: var(--text); } .ds-mobile-nav a:focus-visible, .ds-mobile-nav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Technical Dossier",
+    "overview": "The portfolio presents Harshit as a careful early-career developer through a compact, evidence-led dossier rather than a marketing-heavy landing page. A narrow bordered shell sits over a near-black technical grid; inset panels, fine rules, and small labels create the feeling of a precise working document.\n\nThe interface is restrained and quiet. Inter carries nearly all text, violet appears only as a navigational or structural signal, and motion combines one soft hero arrival with three subtle, content-aware section reveals plus short interaction transitions. The content and contact paths remain the focus.",
+    "keyCharacteristics": [
+      "Narrow centered shell over a near-black grid.",
+      "Inset identity and content panels separated by fine, low-contrast rules.",
+      "Compact type hierarchy with precise monospace section markers.",
+      "Restrained violet signals and a single green availability indicator.",
+      "Floating desktop navigation that becomes a bottom mobile dock."
+    ],
+    "rules": [
+      {
+        "name": "The Quiet Signal Rule",
+        "body": "Violet is reserved for focus, wayfinding, and small structural emphasis; it never becomes a large decorative field.",
+        "section": "colors"
+      },
+      {
+        "name": "The Compact Dossier Rule",
+        "body": "Keep the hierarchy tight and readable; do not introduce oversized display typography or decorative font pairings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Layered, Not Glossy Rule",
+        "body": "Use tonal surfaces, hairline borders, and diffuse shadows for depth; avoid bright glows, glass-heavy panels, or stacked card shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the content shell narrow, centered, and visibly bounded.",
+      "Do use fine rules and tonal layers to organize information before adding decoration.",
+      "Do preserve the desktop rail to mobile dock navigation transformation.",
+      "Do keep motion quiet, functional, and compatible with reduced-motion preferences."
+    ],
+    "donts": [
+      "Don't repeat one identical section reveal, add parallax, or introduce continuous ambient animation.",
+      "Don't turn violet into a dominant background or gradient wash.",
+      "Don't add unverified portfolio claims, projects, credentials, or personal details.",
+      "Don't replace the compact dossier hierarchy with a wide marketing-page composition."
+    ]
+  }
+}

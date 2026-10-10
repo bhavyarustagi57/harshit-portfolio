@@ -1,0 +1,118 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "Mobile navigation" [ref=f1e3]:
+    - link "Home" [ref=f1e4] [cursor=pointer]:
+      - /url: "#home"
+    - link "Skills" [ref=f1e9] [cursor=pointer]:
+      - /url: "#skills"
+    - link "Contact" [ref=f1e15] [cursor=pointer]:
+      - /url: "#contact"
+    - button "Open navigation menu" [ref=f1e19] [cursor=pointer]:
+      - generic [ref=f1e21]: Menu
+  - main [ref=f1e22]:
+    - region [ref=f1e23]:
+      - generic [ref=f1e24]:
+        - generic [aria-hidden] [ref=f1e25]: HB
+        - generic [ref=f1e26]:
+          - generic [ref=f1e27]: Available to learn & build
+          - heading "Harshit Bhojwani" [level=1] [ref=f1e29]
+          - generic [ref=f1e30]:
+            - generic [ref=f1e31]: Software Developer
+            - generic [aria-hidden] [ref=f1e32]: •
+            - generic [ref=f1e33]: New Delhi, India
+        - generic [ref=f1e37]:
+          - link "Let's connect" [ref=f1e38] [cursor=pointer]:
+            - /url: "#contact"
+          - link "Email Harshit Bhojwani" [ref=f1e42] [cursor=pointer]:
+            - /url: mailto:harshitbhojwani2@gmail.com
+          - link "Harshit Bhojwani on LinkedIn" [ref=f1e46] [cursor=pointer]:
+            - /url: https://linkedin.com/in/harshit-bhojwani-379035319
+      - paragraph [ref=f1e51]: Aspiring Software Developer pursuing a B.Tech in Information Technology with a strong foundation in Java, Python, C, Data Structures, and Object-Oriented Programming.
+    - region [ref=f1e52]:
+      - generic [ref=f1e53]:
+        - heading "About" [level=2] [ref=f1e58]
+        - generic [ref=f1e59]: 01 / PROFILE
+      - paragraph [ref=f1e60]: Aspiring Software Developer pursuing a B.Tech in Information Technology, proficient in Java, Python, C, Data Structures, and Object-Oriented Programming. Quick learner with hands-on internship experience and a strong foundation in problem-solving, eager to build efficient, real-world software solutions.
+    - region [ref=f1e61]:
+      - generic [ref=f1e62]:
+        - heading "Experience" [level=2] [ref=f1e68]
+        - generic [ref=f1e69]: 02 / JOURNEY
+      - status [ref=f1e70]:
+        - generic [ref=f1e72]:
+          - heading "Experience timeline ready" [level=3] [ref=f1e73]
+          - paragraph [ref=f1e74]: Verified details will be added in Phase 2.
+    - region [ref=f1e75]:
+      - generic [ref=f1e76]:
+        - heading "Skills" [level=2] [ref=f1e82]
+        - generic [ref=f1e83]: 03 / TOOLKIT
+      - generic [ref=f1e84]:
+        - generic [ref=f1e85]:
+          - heading "Languages" [level=3] [ref=f1e86]
+          - list [ref=f1e87]:
+            - listitem [ref=f1e88]: Java
+            - listitem [ref=f1e89]: Python
+            - listitem [ref=f1e90]: C
+        - generic [ref=f1e91]:
+          - heading "Core concepts" [level=3] [ref=f1e92]
+          - list [ref=f1e93]:
+            - listitem [ref=f1e94]: Data Structures
+            - listitem [ref=f1e95]: Object-Oriented Programming
+            - listitem [ref=f1e96]: Problem Solving
+    - region [ref=f1e97]:
+      - generic [ref=f1e98]:
+        - heading "Education" [level=2] [ref=f1e103]
+        - generic [ref=f1e104]: 04 / LEARNING
+      - status [ref=f1e105]:
+        - generic [ref=f1e107]:
+          - heading "Education section ready" [level=3] [ref=f1e108]
+          - paragraph [ref=f1e109]: Verified details will be added in Phase 2.
+    - region [ref=f1e110]:
+      - generic [ref=f1e111]:
+        - heading "Certifications" [level=2] [ref=f1e115]
+        - generic [ref=f1e116]: 05 / CREDENTIALS
+      - status [ref=f1e117]:
+        - generic [ref=f1e119]:
+          - heading "Certification list ready" [level=3] [ref=f1e120]
+          - paragraph [ref=f1e121]: Verified details will be added in Phase 2.
+    - region [ref=f1e122]:
+      - generic [ref=f1e123]:
+        - heading "Achievements" [level=2] [ref=f1e128]
+        - generic [ref=f1e129]: 06 / MILESTONES
+      - status [ref=f1e130]:
+        - generic [ref=f1e132]:
+          - heading "Achievement list ready" [level=3] [ref=f1e133]
+          - paragraph [ref=f1e134]: Verified details will be added in Phase 2.
+    - region [ref=f1e135]:
+      - generic [ref=f1e136]:
+        - heading "Languages" [level=2] [ref=f1e142]
+        - generic [ref=f1e143]: 07 / COMMUNICATION
+      - status [ref=f1e144]:
+        - generic [ref=f1e146]:
+          - heading "Language list ready" [level=3] [ref=f1e147]
+          - paragraph [ref=f1e148]: Verified details will be added in Phase 2.
+    - region [ref=f1e149]:
+      - generic [ref=f1e150]:
+        - heading "Let’s talk" [level=2] [ref=f1e154]
+        - generic [ref=f1e155]: 08 / CONNECT
+      - generic [ref=f1e156]:
+        - generic [ref=f1e157]:
+          - heading "Building something useful?" [level=3] [ref=f1e158]
+          - paragraph [ref=f1e159]: I'm interested in software development opportunities and practical problems worth solving.
+        - generic [ref=f1e160]:
+          - link [ref=f1e161] [cursor=pointer]:
+            - /url: mailto:harshitbhojwani2@gmail.com
+            - generic [ref=f1e162]: Email
+            - strong [ref=f1e166]: harshitbhojwani2@gmail.com
+          - link [ref=f1e170] [cursor=pointer]:
+            - /url: https://linkedin.com/in/harshit-bhojwani-379035319
+            - generic [ref=f1e171]: LinkedIn
+            - strong [ref=f1e176]: Harshit Bhojwani
+          - generic [ref=f1e180]:
+            - generic [ref=f1e181]: Location
+            - strong [ref=f1e185]: New Delhi, India
+    - generic [ref=f1e186]:
+      - generic [ref=f1e187]: © 2026 Harshit Bhojwani
+      - link "Back to top" [ref=f1e188] [cursor=pointer]:
+        - /url: "#home"
+  - alert [ref=f1e191]

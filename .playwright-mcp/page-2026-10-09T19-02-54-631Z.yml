@@ -1,0 +1,167 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "Mobile navigation" [ref=e262]:
+    - link "Home" [ref=e263] [cursor=pointer]:
+      - /url: "#home"
+    - link "Skills" [ref=e268] [cursor=pointer]:
+      - /url: "#skills"
+    - link "Contact" [ref=e274] [cursor=pointer]:
+      - /url: "#contact"
+    - button "Open navigation menu" [ref=e296] [cursor=pointer]:
+      - generic [ref=e280]: Menu
+  - main [ref=e41]:
+    - region [ref=e42]:
+      - generic [ref=e43]:
+        - generic [aria-hidden] [ref=e44]: HB
+        - generic [ref=e45]:
+          - generic [ref=e46]: Software Developer
+          - heading "Harshit Bhojwani" [level=1] [ref=e48]
+          - generic [ref=e49]:
+            - generic [ref=e50]: Software Developer
+            - generic [aria-hidden] [ref=e51]: •
+            - generic [ref=e52]: New Delhi, India
+        - generic [ref=e56]:
+          - link "Let's connect" [ref=e57] [cursor=pointer]:
+            - /url: "#contact"
+          - link "Email Harshit Bhojwani" [ref=e61] [cursor=pointer]:
+            - /url: mailto:harshitbhojwani2@gmail.com
+          - link "Harshit Bhojwani on LinkedIn" [ref=e65] [cursor=pointer]:
+            - /url: https://linkedin.com/in/harshit-bhojwani-379035319
+      - paragraph [ref=e70]: Aspiring Software Developer pursuing a B.Tech in Information Technology with a strong foundation in Java, Python, C, Data Structures, and Object-Oriented Programming.
+    - region [ref=e71]:
+      - generic [ref=e72]:
+        - heading "About" [level=2] [ref=e77]
+        - generic [ref=e78]: PROFILE
+      - paragraph [ref=e79]: Aspiring Software Developer pursuing a B.Tech in Information Technology, proficient in Java, Python, C, Data Structures, and Object-Oriented Programming. Quick learner with hands-on internship experience and a strong foundation in problem-solving, eager to build efficient, real-world software solutions.
+    - region [ref=e80]:
+      - generic [ref=e81]:
+        - heading "Experience" [level=2] [ref=e87]
+        - generic [ref=e88]: JOURNEY
+      - article [ref=e90]:
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - heading "INFINN" [level=3] [ref=e95]
+              - paragraph [ref=e96]: Product Design Intern
+            - time [ref=e97]: Jul 2026 – Sep 2026
+          - list [ref=e98]:
+            - listitem [ref=e99]: Learned and applied information architecture principles to structure product content and user flows
+            - listitem [ref=e100]: Gathered and analyzed user requirements to inform design decisions
+            - listitem [ref=e101]: Conducted user research and collected feedback to identify usability improvements
+    - region [ref=e102]:
+      - generic [ref=e103]:
+        - heading "Skills" [level=2] [ref=e109]
+        - generic [ref=e110]: TOOLKIT
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - heading "Web Development" [level=3] [ref=e113]
+          - list [ref=e114]:
+            - listitem [ref=e115]: HTML5
+            - listitem [ref=e116]: CSS3
+        - generic [ref=e117]:
+          - heading "Programming" [level=3] [ref=e118]
+          - list [ref=e119]:
+            - listitem [ref=e120]: Java
+            - listitem [ref=e121]: Python
+            - listitem [ref=e122]: C
+            - listitem [ref=e123]: Data Structures
+            - listitem [ref=e124]: Object-Oriented Programming (OOP)
+        - generic [ref=e125]:
+          - heading "Product & Design" [level=3] [ref=e126]
+          - list [ref=e127]:
+            - listitem [ref=e128]: Information Architecture
+            - listitem [ref=e129]: User Research
+            - listitem [ref=e130]: Requirements Gathering
+        - generic [ref=e131]:
+          - heading "Tools & Platforms" [level=3] [ref=e132]
+          - list [ref=e133]:
+            - listitem [ref=e134]: VS Code
+            - listitem [ref=e135]: Git & GitHub
+            - listitem [ref=e136]: MS Office
+            - listitem [ref=e137]: Eclipse
+            - listitem [ref=e138]: Notepad++
+    - region [ref=e139]:
+      - generic [ref=e140]:
+        - heading "Education" [level=2] [ref=e145]
+        - generic [ref=e146]: LEARNING
+      - generic [ref=e147]:
+        - article [ref=e148]:
+          - generic [ref=e150]:
+            - generic [ref=e151]:
+              - generic [ref=e152]:
+                - heading "Maharaja Surajmal Institute of Technology, New Delhi" [level=3] [ref=e153]
+                - paragraph [ref=e154]: B.Tech in Information Technology
+              - time [ref=e155]: 2024 – 2027
+            - strong [ref=e156]: "CGPA: 7.9"
+        - article [ref=e157]:
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - heading "Diploma, New Delhi" [level=3] [ref=e162]
+              - time [ref=e163]: 2021 – 2024
+            - strong [ref=e164]: "Percentage: 80%"
+        - article [ref=e165]:
+          - generic [ref=e167]:
+            - heading "Class X, New Delhi" [level=3] [ref=e170]
+            - strong [ref=e171]: "Percentage: 86%"
+    - region [ref=e172]:
+      - generic [ref=e173]:
+        - heading "Certifications" [level=2] [ref=e177]
+        - generic [ref=e178]: CREDENTIALS
+      - generic [ref=e179]:
+        - article [ref=e180]:
+          - generic [ref=e181]:
+            - heading "Getting Started with Artificial Intelligence" [level=3] [ref=e182]
+            - paragraph [ref=e183]: IBM SkillsBuild
+        - article [ref=e184]:
+          - generic [ref=e185]:
+            - heading "Artificial Intelligence Fundamentals" [level=3] [ref=e186]
+            - paragraph [ref=e187]: IBM SkillsBuild
+        - article [ref=e188]:
+          - generic [ref=e189]:
+            - heading "Project Management Fundamentals" [level=3] [ref=e190]
+            - paragraph [ref=e191]: IBM SkillsBuild
+        - article [ref=e192]:
+          - generic [ref=e193]:
+            - heading "Lifelong Professional Skills" [level=3] [ref=e194]
+            - paragraph [ref=e195]: IBM SkillsBuild
+    - region [ref=e196]:
+      - generic [ref=e197]:
+        - heading "Achievements" [level=2] [ref=e202]
+        - generic [ref=e203]: MILESTONES
+      - list [ref=e204]:
+        - listitem [ref=e205]: Played School Nationals in Table Tennis
+        - listitem [ref=e206]: Represented college in GGSIPU Table Tennis Tournament (2024)
+    - region [ref=e207]:
+      - generic [ref=e208]:
+        - heading "Languages" [level=2] [ref=e214]
+        - generic [ref=e215]: COMMUNICATION
+      - list [ref=e216]:
+        - listitem [ref=e217]: English
+        - listitem [ref=e218]: Hindi
+        - listitem [ref=e219]: French (Basic)
+    - region [ref=e220]:
+      - generic [ref=e221]:
+        - heading "Let’s talk" [level=2] [ref=e225]
+        - generic [ref=e226]: CONNECT
+      - generic [ref=e227]:
+        - generic [ref=e228]:
+          - heading "Let’s connect" [level=3] [ref=e229]
+          - paragraph [ref=e230]: Reach out by email or LinkedIn.
+        - generic [ref=e231]:
+          - link [ref=e232] [cursor=pointer]:
+            - /url: mailto:harshitbhojwani2@gmail.com
+            - generic [ref=e233]: Email
+            - strong [ref=e237]: harshitbhojwani2@gmail.com
+          - link [ref=e241] [cursor=pointer]:
+            - /url: https://linkedin.com/in/harshit-bhojwani-379035319
+            - generic [ref=e242]: LinkedIn
+            - strong [ref=e247]: Harshit Bhojwani
+          - generic [ref=e251]:
+            - generic [ref=e252]: Location
+            - strong [ref=e256]: New Delhi, India
+    - generic [ref=e257]:
+      - generic [ref=e258]: © 2026 Harshit Bhojwani
+      - link "Back to top" [ref=e259] [cursor=pointer]:
+        - /url: "#home"
+  - alert [ref=e281]
